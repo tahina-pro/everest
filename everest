@@ -803,18 +803,20 @@ do_make ()
   separator
   echo -e "\n\n"
 
+  # NOTE: Vale MUST BE built before HACL* and C/ASM Crypto,
+  # because assemblies from Vale are exported there
   separator
-  blue "Rebuilding HACL*"
-  if ! possibly_log "make -C hacl-star/code extract-c $parallel_opt -k" "hacl"; then
-    failed="$failed  HACL*\n"
+  blue "Rebuilding Vale"
+  if ! possibly_log "build_vale" "vale"; then
+    failed="$failed  Vale\n"
   fi
   separator
   echo -e "\n\n"
 
   separator
-  blue "Rebuilding Vale"
-  if ! possibly_log "build_vale" "vale"; then
-    failed="$failed  Vale\n"
+  blue "Rebuilding HACL*"
+  if ! possibly_log "make -C hacl-star/code extract-c $parallel_opt -k" "hacl"; then
+    failed="$failed  HACL*\n"
   fi
   separator
   echo -e "\n\n"
