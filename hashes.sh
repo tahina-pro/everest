@@ -1,12 +1,12 @@
 declare -A hashes
 declare -A branches
-hashes[vale]=f6c33caf1ffc8291e7baaace8efe2e4a4e741926
+hashes[vale]=4ff7724e3c98e27157c5fc247c8d2434f8e2a404
 branches[vale]=master
-hashes[mitls-fstar]=3117ff3bc13fda4a4c0a100f47b82a5342b1dd05
-branches[mitls-fstar]=taramana_makefile_conflicts
-hashes[FStar]=3651efd269c50a7b25eadb66cefddda7cdf1678f
+hashes[mitls-fstar]=59934b0c93fc59209f3ee33736e04a11eeb58f70
+branches[mitls-fstar]=master
+hashes[FStar]=f239f9def85318015a78b79607116799655c5951
 branches[FStar]=taramana_import_vale_asm
-hashes[hacl-star]=c01836a18db779993432cbe5b9891bee025138b1
+hashes[hacl-star]=8f892c3ad8f6b747ee612215f1655c586138b502
 branches[hacl-star]=taramana_import_vale_asm
-hashes[kremlin]=92c51c9695157ef31538334dae4788a1592e7a69
+hashes[kremlin]=812bf718d3d086ad551dd7ac3e533d2b38ba1e35
 branches[kremlin]=master
