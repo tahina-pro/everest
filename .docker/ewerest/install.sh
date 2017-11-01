@@ -33,7 +33,8 @@ popd
 
 git clone --branch $EVEREST_BRANCH 'https://github.com/project-everest/everest.git' everest
 pushd everest
-./everest --yes check pull kremlin make vale make
-# source "$EVEREST_ENV_DEST_FILE"
+./everest --yes check pull kremlin make
+source "$EVEREST_ENV_DEST_FILE"
+./everest --yes vale make
 # ./everest --yes vale make
 popd
