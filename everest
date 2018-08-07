@@ -821,7 +821,7 @@ build_kremlin () {
   # TODO: run the kremlin testsuite too
   make -C kremlin $parallel_opt &&
   make -C kremlin/kremlib $parallel_opt &&
-  OTHERFLAGS='--admit_smt_queries true' make -C kremlin/test $parallel_opt everything
+  OTHERFLAGS='--admit_smt_queries true' make -C kremlin/test Wasm1.test Wasm4.test
 }
 
 build_hacl () {
